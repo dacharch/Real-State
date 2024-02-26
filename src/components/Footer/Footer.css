@@ -18,3 +18,12 @@
     color: #8c8b8b ;
     font-size:.9rem ;
 }
+@media (max-width:768px) {
+    .f-container{
+        justify-content: center;
+    }
+    .f-container >div{
+        align-items: center!important;
+        text-align: center;
+    }    
+}
