@@ -1,55 +1,87 @@
-.c-contaner{
+.c-contaner {
     justify-content: space-between;
-    gap:1rem ;
+    gap: 1rem;
 }
-.c-left{
-    gap:0.5rem ;
+
+.c-left {
+    gap: 0.5rem;
 }
-.contactModes{
+
+.contactModes {
     margin-top: 2rem;
-    gap:1rem;
+    gap: 1rem;
 }
-.contactModes .row{
-    gap:1.5rem ;
+
+.contactModes .row {
+    gap: 1.5rem;
 }
-.mode{
-    width:16rem ;
-    padding:1rem;
-    border:0.8px solid rgba(128,128,128,.143) ;
+
+.mode {
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(128, 128, 128, .143);
     border-radius: 5px;
-    gap:1rem ;
+    gap: 1rem;
     transition: all .3s ease-in;
 }
 
-.mode .detail .primaryText{
-    font-size:1.1rem ;
+.mode .detail .primaryText {
+    font-size: 1.1rem;
     font-weight: 600;
 }
-.mode>:nth-child(1){
-   width:100%  ;
-   gap:1.6rem ;
+
+.mode>:nth-child(1) {
+    width: 100%;
+    gap: 1.6rem;
 }
-.mode:hover{
-    scale:1.1 ;
+
+.mode:hover {
+    scale: 1.1;
     box-shadow: var(--shadow);
     cursor: pointer;
 }
-.mode  .button:hover{
-    background:var(--blue-gradient);
-    color:white  ;
-    scale:0.8 ;
+
+.mode .button:hover {
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.8;
     cursor: pointer;
 }
-.icon{
-    padding:10px ;
-    background:#eeeeff ;
-    border-radius: 5px ;
+
+.icon {
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
 
 }
-.mode .button{
-    width:100% ;
-    background:var(--lightBlue) ;
-    color:var(--blue) ;
-    font-size:.9rem ;
+
+.mode .button {
+    width: 100%;
+    background: var(--lightBlue);
+    color: var(--blue);
+    font-size: .9rem;
     font-weight: 600;
+}
+
+@media (max-width:1024px) {
+    .c-contaner {
+        flex-direction: column;
+    }
+
+    .c-right {
+        justify-content: center;
+    }
+
+    .contactModes {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mode {
+        width: 100%;
+    }
 }
