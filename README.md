@@ -13,8 +13,8 @@ To run the Real Estate Website locally, follow these steps:
 Make sure you have the following installed on your machine:
 
 - Node.js
-- npm (Node Package Manager)
-- MongoDB
+- yarn (Yarn Package Manager)
+
 
 ### Installation
 
